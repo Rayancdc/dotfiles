@@ -6,5 +6,6 @@
     "osx": [
       "~/.rbenv/shims"
     ]
-  }
+  },
+  "highlights.start_hidden": true
 }

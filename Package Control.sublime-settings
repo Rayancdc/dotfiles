@@ -1,16 +1,28 @@
 {
-  "installed_packages":
-  [
-    "AdvancedNewFile",
-    "All Autocomplete",
-    "Babel",
-    "Emmet",
-    "ERB Snippets",
-    "Git",
-    "GitGutter",
-    "Package Control",
-    "SCSS",
-    "SublimeLinter",
-    "SublimeLinter-rubocop"
-  ]
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"Angular CLI",
+		"Babel",
+		"Babel Snippets",
+		"BracketHighlighter",
+		"Emmet",
+		"ERB Snippets",
+		"Git",
+		"GitGutter",
+		"MarkdownEditing",
+		"Package Control",
+		"ReactJS",
+		"Ruby on Rails snippets",
+		"SCSS",
+		"SublimeLinter",
+		"SublimeLinter-rubocop",
+		"TypeScript"
+	]
 }

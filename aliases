@@ -9,3 +9,5 @@ alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 # New alias
 alias nwr='sudo service network-manager restart'
 alias bruna="echo 'Amor da minha vida'"
+alias lvh='rails s -p 3000 -b lvh.me'
+alias ngrok='~/Documents/ngrok'
