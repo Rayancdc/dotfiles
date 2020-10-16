@@ -11,3 +11,34 @@ alias nwr='sudo service network-manager restart'
 alias bruna="echo 'Amor da minha vida'"
 alias lvh='rails s -p 3000 -b lvh.me'
 alias ngrok='~/Documents/ngrok'
+
+cx_focco_staging() {
+  local server_name="${1:-stork}"
+  cx config use FOCCO
+  cx ssh -s "focco-stg.net" -e staging "$server_name"
+}
+cx_focco_production() {
+  local server_name="${1:-platypus}"
+  cx config use FOCCO
+  cx ssh -s "focco.net" -e production "$server_name"
+}
+cx_levoo_staging() {
+  local server_name="${1:-pelican}"
+  cx config use LEVOO
+  cx ssh -s "levoo-stg" -e staging "$server_name"
+}
+cx_levoo_production() {
+  local server_name="${1:-gazelle}"
+  cx config use LEVOO
+  cx ssh -s "levoo.com.br" -e production "$server_name"
+}
+cx_levoo_production_mobile() {
+  local server_name="${1:-anteater}"
+  cx config use LEVOO
+  cx ssh -s 'mobile.levoo.com.br' -e production "$server_name"
+}
+cx_levoo_production_api() {
+  local server_name="${1:-angelfish}"
+  cx config use LEVOO
+  cx ssh -s 'api.levoo.com.br' -e production "$server_name"
+}
