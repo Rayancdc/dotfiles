@@ -12,6 +12,16 @@ alias bruna="echo 'Amor da minha vida'"
 alias lvh='rails s -p 3000 -b lvh.me'
 alias ngrok='~/Documents/ngrok'
 
+alias gs='git status'
+alias ga='git add'
+alias gp='git push'
+alias gpo='git push origin'
+
+gc() {
+  local message="${1}"
+  git commit -m message
+}
+
 cx_focco_staging() {
   local server_name="${1:-stork}"
   cx config use FOCCO
@@ -28,7 +38,7 @@ cx_levoo_staging() {
   cx ssh -s "levoo-stg" -e staging "$server_name"
 }
 cx_levoo_production() {
-  local server_name="${1:-gazelle}"
+  local server_name="${1:-llama}"
   cx config use LEVOO
   cx ssh -s "levoo.com.br" -e production "$server_name"
 }
