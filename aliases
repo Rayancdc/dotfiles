@@ -18,8 +18,7 @@ alias gp='git push'
 alias gpo='git push origin'
 
 gc() {
-  local message="${1}"
-  git commit -m "$message"
+  git commit -m $1
 }
 
 cx_focco_staging() {
